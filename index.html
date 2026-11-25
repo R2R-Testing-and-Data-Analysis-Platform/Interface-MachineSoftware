@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Dashboard | Machine Control</title><link rel="stylesheet" href="css/style.css"></head>
+<body><div class="app-shell"><aside class="sidebar"><a class="brand" href="index.html"><span class="brand-mark">MC</span><span><strong>Machine Control</strong><small>PV & Materials Lab</small></span></a><div class="nav-caption">WORKSPACE</div><nav><a class="nav-link active" href="index.html"><span>▦</span>Dashboard</a><a class="nav-link " href="connection.html"><span>⌁</span>Connection</a><a class="nav-link " href="measurement-selection.html"><span>＋</span>New experiment</a><a class="nav-link " href="machine-configuration.html"><span>⚙</span>Configuration</a><a class="nav-link " href="live-monitoring.html"><span>◉</span>Live monitoring</a><a class="nav-link " href="results-analysis.html"><span>⌁</span>Results</a><a class="nav-link " href="experiment-history.html"><span>▤</span>History</a><a class="nav-link " href="system-diagnostics.html"><span>⌕</span>Diagnostics</a></nav><div class="sidebar-bottom"><span class="status good"><i></i> UI prototype</span><small>Hardware communication is simulated.</small></div></aside>
+<main class="main"><header class="topbar"><div class="mobile-brand">MACHINE CONTROL</div><div class="crumb">Research Project <span>/</span> Dashboard</div><div class="top-actions"><span class="top-dot"></span><span>Prototype mode</span></div></header><div class="content">
+<section class="page-head"><div><p class="eyebrow">OVERVIEW</p><h1>Machine dashboard</h1><p class="muted">Monitor the instrument and access your measurement workflows.</p></div><span class="status good"><i></i> Controller online</span></section>
+<div class="grid stats">
+  <article class="panel stat"><span class="muted">Machine status</span><strong class="green">Ready</strong><small>ESP32 connection active</small></article>
+  <article class="panel stat"><span class="muted">Selected mode</span><strong>PV / IV</strong><small>Last configured measurement</small></article>
+  <article class="panel stat"><span class="muted">Experiments today</span><strong>04</strong><small>2 completed · 2 pending</small></article>
+  <article class="panel stat"><span class="muted">Last activity</span><strong>09:42</strong><small>Connection check successful</small></article>
+</div>
+<div class="grid two">
+  <article class="panel"><div class="panel-title"><h2>Quick actions</h2><span class="muted">Start a workflow</span></div><div class="action-grid">
+    <a class="action" href="measurement-selection.html"><b>＋</b><span><strong>New experiment</strong><small>Choose a measurement type</small></span></a>
+    <a class="action" href="connection.html"><b>⌁</b><span><strong>Connection</strong><small>Configure serial communication</small></span></a>
+    <a class="action" href="experiment-history.html"><b>▤</b><span><strong>Experiment history</strong><small>Browse saved measurements</small></span></a>
+    <a class="action" href="system-diagnostics.html"><b>⚙</b><span><strong>Diagnostics</strong><small>Review system health</small></span></a>
+  </div></article>
+  <article class="panel"><div class="panel-title"><h2>Current experiment</h2><span class="status neutral">Idle</span></div><div class="empty-state"><div class="empty-icon">⌁</div><strong>No experiment running</strong><p class="muted">Create a new experiment to see live measurements here.</p><a class="btn primary" href="measurement-selection.html">Create experiment</a></div></article>
+</div>
+<article class="panel"><div class="panel-title"><h2>Recent activity</h2><a href="experiment-history.html">View history →</a></div><div class="table-wrap"><table><thead><tr><th>Experiment</th><th>Type</th><th>Date</th><th>Status</th></tr></thead><tbody><tr><td>PV_sample_04</td><td>PV / IV</td><td>Today, 09:20</td><td><span class="status good">Completed</span></td></tr><tr><td>Sheet_test_12</td><td>Sheet resistance</td><td>Yesterday</td><td><span class="status good">Completed</span></td></tr><tr><td>PV_sample_03</td><td>PV / IV</td><td>Yesterday</td><td><span class="status warning">Review</span></td></tr></tbody></table></div></article>
+<footer>Machine Control System · Interface prototype · Not connected to hardware</footer></div></main></div><script src="js/main.js"></script></body></html>
